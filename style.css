@@ -10,7 +10,7 @@
 
 .TV .overlap-wrapper {
   background-color: #ffffff;
-  width: 1717px;
+  width: 100%;
   height: 2900px;
 }
 
@@ -686,3 +686,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
