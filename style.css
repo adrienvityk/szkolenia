@@ -175,7 +175,7 @@
 
 .TV .text-wrapper-4 {
   position: absolute;
-  top: 254px;
+  top: 200px;
   left: 210px;
   font-family: "Montserrat-SemiBold", Helvetica;
   font-weight: 600;
@@ -189,7 +189,7 @@
   position: absolute;
   width: 425px;
   height: 332px;
-  top: 196px;
+  top: 146px;
   left: 1088px;
   /*box-shadow: 4px 5px 10px #00000040;*/
 }
@@ -686,4 +686,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
