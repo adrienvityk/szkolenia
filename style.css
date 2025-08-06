@@ -344,13 +344,13 @@
   height: 34px;
 }
 
-.TV .vector-4 {
+/*.TV .vector-4 {
   position: absolute;
   width: 3px;
   height: 31px;
   top: 0;
   left: 11px;
-}
+}*/
 
 .TV .vector-5 {
   position: absolute;
@@ -685,4 +685,75 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 40px;
+  border-radius: 15px;
+  width: 70%;
+  max-width: 800px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: modalopen 0.4s;
+  border: 5px solid #036bbd;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-modal {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #036bbd;
+}
+
+.modal-title {
+  color: #036bbd;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+}
+
+.modal-body {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Montserrat-Regular", Helvetica;
+}
+
+.modal-body {
+  white-space: pre-line; /* Preserves line breaks and wraps text */
 }
