@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="TV">
@@ -45,12 +46,12 @@
             szkolenia!
           </p>
           <div class="frame-4">
-            <div class="DOWIEDZ-SI-WI-CEJ">DOWIEDZ SIĘ WIĘCEJ</div>
-            <div class="overlap-group-wrapper">
+            <div class="DOWIEDZ-SI-WI-CEJ" data-course="project-manager">DOWIEDZ SIĘ WIĘCEJ</div>
+            <!-- <div class="overlap-group-wrapper">
               <div class="overlap-group-2">
                 <img class="vector-4" src="img/image.svg" /> <img class="vector-5" src="img/vector-2.svg" />
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="group-5">
             <p class="div-2">
@@ -60,7 +61,7 @@
             <img class="frame-255" src="img/pexels-fauxels-3183153 1.png" />
             <div class="frame-5"></div>
             <div class="group-6">
-              <a href="#rozwin-opis" class="frame-6">
+              <a href="#rozwin-opis" class="frame-6" data-course="project-manager">
                 <span class="text-wrapper-9">Rozwiń opis</span>
               </a>
               <a href="https://forms.gle/FM7Nzm6gH2nEWZsCA" class="frame-7" target="_blank" rel="noopener noreferrer">
@@ -76,7 +77,7 @@
             </p>
             <img class="frame-8" src="img/pexels-cottonbro-6153343.png" />
             <div class="group-8">
-              <a href="#rozwin-opis" class="frame-6">
+              <a href="#rozwin-opis" class="frame-6" data-course="content-creator">
                 <span class="text-wrapper-9">Rozwiń opis</span>
               </a>
               <a href="https://forms.gle/PXo98YrmY5XXEkoA7" class="frame-7" target="_blank" rel="noopener noreferrer">
@@ -95,7 +96,7 @@
               </div>
             </div>
             <div class="group-6">
-              <a href="#rozwin-opis" class="frame-6">
+              <a href="#rozwin-opis" class="frame-6" data-course="data-analyst">
                 <span class="text-wrapper-9">Rozwiń opis</span>
               </a>
               <a href="https://forms.gle/Rq2BcfYjWQSJxwHk9" class="frame-7" target="_blank" rel="noopener noreferrer">
@@ -114,7 +115,7 @@
               </div>
             </div>
             <div class="group-8">
-              <a href="#rozwin-opis" class="frame-6">
+              <a href="#rozwin-opis" class="frame-6" data-course="office-worker">
                 <span class="text-wrapper-9">Rozwiń opis</span>
               </a>
               <a href="https://forms.gle/49G6v33pFfCmWsAD6" class="frame-7" target="_blank" rel="noopener noreferrer">
@@ -126,6 +127,14 @@
           <div class="frame-10"><div class="text-wrapper-9">KONTAKT</div></div>
           <img class="line" src="img/line-1.svg" /> -->
         </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="courseModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 class="modal-title" id="modalCourseTitle"></h2>
+        <div class="modal-body" id="modalCourseDescription"></div>
       </div>
     </div>
   </body>
